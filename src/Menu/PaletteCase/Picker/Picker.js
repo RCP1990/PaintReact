@@ -16,10 +16,10 @@ class Picker extends Component {
     selected() {
         this.props.colorUpdate(this.state.colorVal);
         this.props.handleColorC(this.state.colorVal);
-        {/*this.props.togglePicker();*/}
+        console.log(this.state.colorVal)
     }
     
-      handleColorChange(color) {
+    handleColorChange(color) {
      this.setState ({
          colorVal:color
      })
@@ -49,4 +49,3 @@ class Picker extends Component {
     }
 }
 export default Picker;
-
